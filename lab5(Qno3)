@@ -1,18 +1,17 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main() {
+	int num, factorial = 1;
+	cout << " Enter Number To Find Its Factorial:  ";
 
-	int a, i;
+	cin >> num;
 
-	cout << "Enter any digit= ";
+	for (int a = 1; a <= num; a++)
+	{
+		factorial = factorial * a;
 
-	cin >> a;
-
-	for (i = 1; i <= 10; i++) {
-
-		cout << a << " x " << i << " = " << i * a << '\n';
-
+		cout << num << "!" << " * " << a << " = " << factorial << '\n';
 	}
-
+	
 	return 0;
 }
